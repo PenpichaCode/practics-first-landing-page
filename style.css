@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+nav{
+    /* บน 0, ซ้าย-ขวา 80px */
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* background-color: rgb(224, 224, 224); */
+}
+
+nav a.logo{
+    font-size: 33px;
+    color: #c20000;
+    font-weight: 600;
+
+}
+
+nav .links a:not(:last-child){
+    margin-right: 50px;
+
+}
+
+nav .login button{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+nav .login button.signup{
+    background-color: #000;
+    color: #f1f1f1 ;
+    border-radius: 4px;
+    margin-right: 14px;
+}
+
+header{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .left{
+    width: 700px;
+}
+
+header h1{
+    font-size: 80px;
+}
+
+header .left p {
+    color: #777;
+    margin: 30px 0;
+}
+
+header .left h1 span{
+    color: #c20000;
+}
+
+header .left a{
+    background-color: #c20000;
+    display: flex;
+    align-items: center;
+    width: 170px;
+    padding: 8px;
+    /* color: #f1f1f1; */
+    border-radius: 60px;
+    cursor: pointer;
+}
+
+header .left a i{
+    background-color: #f1f1f1;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+header .left span{
+    color: #f1f1f1;
+    margin: 10px;
+}
+
+
+header img{
+    width: 700px;
+}
+
+/* landind page2 */
+
+h2.separator{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+.card-sevices{
+    padding: 0 80px;
+    /* margin: [บน] [ซ้าย/ขวา] [ล่าง]; */
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.card-sevices .item, 
+.clients-info .Clients-list .item{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-sevices .item:hover,
+.clients-info .Clients-list .item:hover{
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card-sevices .item .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-sevices .item i{
+    font-size: 40px;
+}
+
+
+.card-sevices .item p{
+    margin-top: 10px;
+    padding: 0 4px;
+}
+
+.clients-info{
+    margin-top: 15px;
+    padding: 0 80px;
+}
+
+.clients-info .category{
+    display: flex;
+    gap: 20px;
+}
+
+.clients-info .category a{
+    background-color: #f1f1f1;
+    font-size: 20px;
+    padding: 8px 15px;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.clients-info .category a:hover{
+    color: #fff;
+    background-color: #c20000;
+}
+
+.clients-info .Clients-list{
+    padding:40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20;
+}
+
+.clients-info .Clients-list .item{
+    margin-right: 30px;
+}
+.clients-info .Clients-list .item img{
+    width: 280px;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    border-radius: 14px;
+}
+
+.clients-info .Clients-list .item .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.clients-info .Clients-list .item .info h5{
+    font-size: 20px;
+}
+
+.clients-info .Clients-list .item .info .point-reviw{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.clients-info .Clients-list .item .info .point-reviw i{
+    color: #000000;
+    font-size: 22px
+}
+
+.clients-info .Clients-list .item .info .point-reviw p{
+    font-size: 18px;
+    color: #585858;
+}
+
+.clients-info .Clients-list .item .info > p{
+    font-size: 18px;
+    color: #585858;    
+}
+
+.clients-info .Clients-list .item .header-review h5{
+    font-size: 20px;
+}
+
+.clients-info .Clients-list .item .header-review h5{
+    font-size: 20px;
+    font-weight: 500;
+    color: #c20000;
+    margin-top: 10px;
+    display: block;
+    align-items: center;
+}
+
+.clients-info .Clients-list .item .header-review p{
+    padding: 10px 20px;
+}
+
+.clients-info .Clients-list .item .header-review .name-user{
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.clients-info .Clients-list .item .responsive{
+    display: flex;
+    align-items: center;
+}
+
+.clients-info .Clients-list .item .responsive .comment-review,
+.clients-info .Clients-list .item .responsive .comment-text{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.clients-info .Clients-list .item .responsive .comment-review i{
+    font-size: 14px;
+    background-color: #585858;
+    color: #f1f1f1;
+    padding: 8px;
+    border-radius: 50%;
+    transition: all 0.3 ease;
+}
+
+.clients-info .Clients-list .item .responsive .comment-review i:hover{
+    background-color: #c20000;
+     
+}
+
+.clients-info .Clients-list .item .responsive .comment-review p{
+    padding-left: 5px;
+    font-size: 15px;
+    color: #585858;
+}
+
+.clients-info .Clients-list .item .responsive .comment-text input{
+    padding-left: 5px;
+    margin-right:10px;
+} 
+
